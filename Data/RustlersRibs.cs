@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 public class RustlersRibs
 {
 
@@ -15,6 +15,16 @@ public class RustlersRibs
         get
         {
             return 894;
+        }
+    }
+    public List<string> SpecialInstructions
+    {
+        get
+        {
+            List<string> instructions = new List<string>();
+
+
+            return instructions;
         }
     }
 }

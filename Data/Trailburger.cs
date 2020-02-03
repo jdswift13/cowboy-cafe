@@ -1,6 +1,6 @@
 ﻿using System;
-
-public class Trailburger
+using System.Collections.Generic;
+public class TrailBurger
 {
 
     public uint Calories
