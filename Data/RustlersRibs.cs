@@ -1,23 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-public class RustlersRibs
+public class RustlersRibs : CowboyCafe.Data.Entree
 {
 
-    public double Price
+    public override double Price
     {
         get
         {
             return 7.50;
         }
     }
-    public uint Calories
+    public override uint Calories
     {
         get
         {
             return 894;
         }
     }
-    public List<string> SpecialInstructions
+    public override List<string> SpecialInstructions
     {
         get
         {

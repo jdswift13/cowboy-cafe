@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-public class PecosPulledPork
+public class PecosPulledPork : CowboyCafe.Data.Entree
 {
-    public uint Calories
+    public override uint Calories
     {
         get
         {
             return 528;
         }
     }
-    public double Price
+    public override double Price
     {
         get
         {
@@ -33,7 +33,7 @@ public class PecosPulledPork
     /// <summary>
     /// List which holds special instructions
     /// </summary>
-    public List<string> SpecialInstructions
+    public override List<string> SpecialInstructions
     {
         get
         {

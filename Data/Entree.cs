@@ -9,10 +9,7 @@ namespace CowboyCafe.Data
     /// </summary>
     public abstract class Entree
     {
-        /// <summary>
-        /// Gets the size of the entree
-        /// </summary>
-        public virtual Size Size { get; set; }
+       
 
         /// <summary>
         /// Gets the price of the side
@@ -27,6 +24,6 @@ namespace CowboyCafe.Data
         /// <summary>
         /// Gets Special Instructions
         /// </summary>
-        public abstract List<string> SpecialInstructions { get; set; }
+        public abstract List<string> SpecialInstructions { get; }
     }
 }

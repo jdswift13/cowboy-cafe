@@ -7,7 +7,7 @@ namespace CowboyCafe.Data
     /// <summary>
     /// Class which represents Angry Chicken entree menu item
     /// </summary>
-    public class AngryChicken
+    public class AngryChicken : Entree
     {
 
         /// <summary>
@@ -25,26 +25,25 @@ namespace CowboyCafe.Data
         /// </summary>
         public bool Pickle { get; set; } = true;
 
-        /// <summary>
-        /// Price of dish
-        /// </summary>
-        public double Price
+        public override uint Calories
         {
-            get { return 5.99; }
+            get
+            {
+                return 190;
+            }
         }
-            
-        /// <summary>
-        /// Calories in dish
-        /// </summary>
-        public uint Calories
+        public override double Price
         {
-            get { return 190; }
+            get
+            {
+                return 5.99;
+            }
         }
 
         /// <summary>
         /// List which holds special instructions
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {
