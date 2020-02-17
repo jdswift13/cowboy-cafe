@@ -15,8 +15,8 @@ namespace CowboyCafe.Data
         /// </summary>
         public bool Bread
         {
-            get { return Bread; }
-            set { Bread = value; }
+            get { return bread; }
+            set { bread = value; }
         }
         private bool bread = true;
 
@@ -49,7 +49,7 @@ namespace CowboyCafe.Data
             {
                 List<string> instructions = new List<string>();
 
-                if (!bread){ instructions.Add("hold bread"); }
+                if (!Bread){ instructions.Add("hold bread"); }
                 if (!Pickle) { instructions.Add("hold pickle"); }
 
                 return instructions;
