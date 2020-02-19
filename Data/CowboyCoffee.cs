@@ -6,11 +6,16 @@ namespace CowboyCafe.Data
 {
     public class CowboyCoffee : Drink
     {
-        //public SodaFlavor Flavor { get; set; }
+        public Size Size { get; set; }
         /// <summary>
         /// represents ice
         /// </summary>
         public override bool Ice { get; set; } = false;
+
+        public bool RoomForCream { get; set; } = false;
+        public bool Decaf { get; set; } = false;
+
+
         /// <summary>
         /// uint representing calories
         /// </summary>
@@ -21,11 +26,11 @@ namespace CowboyCafe.Data
                 switch (Size)
                 {
                     case Size.Large:
-                        return 198;
+                        return 7;
                     case Size.Medium:
-                        return 146;
+                        return 5;
                     case Size.Small:
-                        return 110;
+                        return 3;
                     default:
                         throw new NotImplementedException();
 
@@ -42,11 +47,11 @@ namespace CowboyCafe.Data
                 switch (Size)
                 {
                     case Size.Large:
-                        return 2.59;
+                        return 1.60;
                     case Size.Medium:
-                        return 2.10;
+                        return 1.10;
                     case Size.Small:
-                        return 1.59;
+                        return 0.60;
                     default:
                         throw new NotImplementedException();
                 }
@@ -60,7 +65,7 @@ namespace CowboyCafe.Data
             get
             {
                 List<string> instructions = new List<string>();
-
+                if (RoomForCream) instructions.Add("Room for Cream");
                 if (Ice) instructions.Add("Add Ice");
                 return instructions;
             }
