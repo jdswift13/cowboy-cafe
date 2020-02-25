@@ -61,4 +61,13 @@ public class TexasTripleBurger : CowboyCafe.Data.Entree
             return instructions;
         }
     }
+    /// <summary>
+    /// ToString function
+    /// </summary>
+    /// <returns></returns>
+    public override string ToString()
+    {
+        return "Texas Triple Burger";
+    }
+
 }

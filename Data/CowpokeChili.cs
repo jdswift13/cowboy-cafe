@@ -59,7 +59,7 @@ namespace CowboyCafe.Data
         {
             get
             {
-                return 610;
+                return 6.10;
             }
         }
 
@@ -81,6 +81,15 @@ namespace CowboyCafe.Data
                 return instructions;
             }
         }
+        /// <summary>
+        /// ToString function
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return "Cowpoke Chili";
+        }
+
     }
 }
 

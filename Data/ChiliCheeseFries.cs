@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace CowboyCafe.Data{
+using System.Text;
+namespace CowboyCafe.Data { 
 
 public class ChiliCheeseFries : Side
 {
@@ -39,7 +40,18 @@ public class ChiliCheeseFries : Side
                 }
             }
         }
-        
-   
-}
+
+        /// <summary>
+        /// ToString function
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(Size + " ");
+            sb.Append("Chili Cheese Fries");
+            return sb.ToString();
+        }
+
+    }
 }

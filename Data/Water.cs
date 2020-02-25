@@ -15,10 +15,7 @@ namespace CowboyCafe.Data
         /// represents ice
         /// </summary>
         public override bool Ice { get; set; } = true;
-        /// <summary>
-        /// represents soda flavor
-        /// </summary>
-        public SodaFlavor Flavor { get; set; }
+        
         /// <summary>
         /// uint representing calories
         /// </summary>
@@ -52,5 +49,17 @@ namespace CowboyCafe.Data
                 return instructions;
             }
         }
+        /// <summary>
+        /// ToString function
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(Size + " ");
+            sb.Append("Water");
+            return sb.ToString();
+        }
+
     }
 }

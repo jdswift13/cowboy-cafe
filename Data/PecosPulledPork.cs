@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Collections.Generic;
 public class PecosPulledPork : CowboyCafe.Data.Entree
 {
@@ -45,4 +46,13 @@ public class PecosPulledPork : CowboyCafe.Data.Entree
             return instructions;
         }
     }
+    /// <summary>
+    /// ToString function
+    /// </summary>
+    /// <returns></returns>
+    public override string ToString()
+    {
+        return "Pecos Pulled Pork";
+    }
+
 }

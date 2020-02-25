@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 using CowboyCafe.Data;
-/*
+
 namespace CowboyCafe.DataTests
 {
     public class ToStringTests
@@ -105,7 +105,7 @@ namespace CowboyCafe.DataTests
         [InlineData(Size.Small, true, "Small Decaf Cowboy Coffee")]
         [InlineData(Size.Medium, true, "Medium Decaf Cowboy Coffee")]
         [InlineData(Size.Large, true, "Large Decaf Cowboy Coffee")]
-        public void CowbowyCoffeeToStringShouldMatchExpectations(Size size, bool decaf, string expected)
+        public void CowboyCoffeeToStringShouldMatchExpectations(Size size, bool decaf, string expected)
         {
             var coffee = new CowboyCoffee()
             {
@@ -117,4 +117,4 @@ namespace CowboyCafe.DataTests
 
     }
 }
-*/
+

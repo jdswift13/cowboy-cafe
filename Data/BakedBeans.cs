@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
 namespace CowboyCafe.Data
 {
@@ -40,6 +39,20 @@ namespace CowboyCafe.Data
                         throw new NotImplementedException();
                 }
             }
+        }
+
+
+
+        /// <summary>
+        /// ToString function
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(Size + " ");
+            sb.Append("Baked Beans");
+            return sb.ToString();
         }
 
 

@@ -95,5 +95,21 @@ namespace CowboyCafe.Data
                 return instructions;
             }
         }
+        /// <summary>
+        /// ToString function
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(Size + " ");
+            sb.Append("Texas ");
+            if (Sweet) sb.Append("Sweet ");
+            else sb.Append("Plain ");
+
+            sb.Append("Tea");
+            return sb.ToString();
+        }
+
     }
 }

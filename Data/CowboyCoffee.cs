@@ -70,5 +70,21 @@ namespace CowboyCafe.Data
                 return instructions;
             }
         }
+        /// <summary>
+        /// ToString function
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(Size);
+            if (Decaf) sb.Append(" Decaf");
+            sb.Append(" Cowboy Coffee");
+            //if (RoomForCream) sb.Append("with room for cream ");
+            //if (RoomForCream && Ice) sb.Append("and ice");
+            //else if (Ice) sb.Append("with ice");
+            return sb.ToString();
+        }
+
     }
 }

@@ -14,23 +14,73 @@
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            
+
         </Grid.RowDefinitions>
         <StackPanel>
-            
-            <TextBlock>
-                
+
+            <TextBlock Name="Entrees">
+                 Entrees:
             </TextBlock>
-            <Button>
-                AngryChicken
+            <Button Name="AngryChickenButton"  Height="40" Click="Button_Click">
+                Angry Chicken
             </Button>
-            <Button>
-                CowboyChili
+            <Button Name="CowpokeChiliButton" Height="40" Click="CowpokeChiliButton_Click">
+                Cowpoke Chili
+            </Button>
+            <Button  Name="RustlersRibsButton" Height="40" Click="RustlersRibsButton_Click">
+                Rustler's Ribs
+            </Button>
+            <Button Name="PecosPulledPorkButton" Height="40" Click="PecosPulledPorkButton_Click">
+                Pecos Pulled Pork
+            </Button>
+            <Button Name="TrailBurgerButton" Height="40" Click="TrailBurgerButton_Click">
+                Trail Burger
+            </Button>
+            <Button Name="DakotaDoubleBurgerButton" Height="40" Click="DakotaDoubleBurgerButton_Click">
+                Dakota Double Burger
+            </Button>
+            <Button Name="TexasTripleBurgerButton" Height="40" Click="TexasTripleBurgerButton_Click">
+                Texas Triple Burger
             </Button>
         </StackPanel>
         <StackPanel Grid.Column="1">
+            <TextBlock Name="Sides">
+                 Sides:
+            </TextBlock>
+            <Button Name="ChiliCheeseFriesButton" Height="40" Click="ChiliCheeseFriesButton_Click">
+                Chili Cheese Fries
+            </Button>
+            <Button Name ="CornDodgersButton" Height="40" Click="CornDodgersButton_Click">
+                Corn Dodgers
+            </Button>
+            <Button Name="PanDeCampoButton" Height="40" Click="PanDeCampoButton_Click">
+                Pan De Campo
+            </Button>
+            <Button Name ="BakedBeansButton" Height="40" Click="BakedBeansButton_Click">
+                Baked Beans
+            </Button>
             
         </StackPanel>
-        
+        <StackPanel Grid.Column="2">
+            <TextBlock Name="Drinks">
+                 Drinks:
+            </TextBlock>
+            <Button Name="JerkedSodaButton" Height="40" Click="JerkedSodaButton_Click">
+                Jerked Soda
+            </Button>
+            <Button Name="TexasTeaButton" Height="40" Click="TexasTeaButton_Click">
+                Texas Tea
+            </Button>
+            <Button Name ="CowboyCoffeeButton" Height="40" Click="CowboyCoffeeButton_Click">
+                Cowboy Coffee
+            </Button>
+            <Button Name ="WaterButton" Height="40" Click="WaterButton_Click">
+                Water
+            </Button>
+
+        </StackPanel>
+        <ListView Name="OrderList" Grid.Column="3" >
+            
+        </ListView>
     </Grid>
 </UserControl>
