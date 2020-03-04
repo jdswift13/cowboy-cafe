@@ -24,12 +24,13 @@
         <Button Name="SelectItemButton">
 
         </Button>
-        <Button Name="CancelButton">
+        <Button Name="CancelButton" Margin="0,0,65,411"/>
+        <Button Height ="40" Name="CompleteButton" RenderTransformOrigin="0.506,-1.109" Grid.ColumnSpan="2" Margin="0,205,266,205">
 
         </Button>
-        <Button Height ="40" Name="CompleteButton" RenderTransformOrigin="0.506,-1.109">
-            
-        </Button>
+        <Border Name="Container" Grid.Row="1">
+            <local:MenuItemSelectionControl/>
+        </Border>
         <local:MenuItemSelectionControl Margin="-2,39,90,-39" Grid.ColumnSpan="3"/>
         <local:OrderSummaryControl Grid.ColumnSpan="3" Margin="-2,-10,92,10">
 

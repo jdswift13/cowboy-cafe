@@ -5,7 +5,7 @@ using System.ComponentModel;
 
 namespace CowboyCafe.Data
 {
-    public class Order
+    public class Order : INotifyPropertyChanged
     {
         private List<IOrderItem> items = new List<IOrderItem>();
         private double subtotal = 0;

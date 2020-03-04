@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using CowboyCafe.Data;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -12,25 +11,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
-namespace PointOfSale
+namespace PointOfSale.CustomizationScreens
 {
     /// <summary>
-    /// Interaction logic for OrderControl.xaml
+    /// Interaction logic for CowpokeChiliCustomization.xaml
     /// </summary>
-    public partial class OrderControl : UserControl
+    public partial class CowpokeChiliCustomization : UserControl
     {
-        public OrderControl()
+        public CowpokeChiliCustomization()
         {
             InitializeComponent();
-            //buttonname.click += eventhandler;
-            var order = new Order();
-            this.DataContext = order;
-
-        }
-        public void SwapScreen(FrameworkElement element)
-        {
-            Container.Child = element;
         }
     }
 }
