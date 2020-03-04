@@ -81,31 +81,8 @@ namespace CowboyCafe.DataTests.UnitTests
             }
             Assert.Equal(total, order.Subtotal);
         }
-        [Fact]
-        [InlineData("Price")]
-        [InlineData("Items")]
-        public void AddingAnItemShouldTriggerPropertyChangedForPrice(string propertyName)
-        {
-            var order = new Order();
-            var item = new MockOrderItem();
-            Assert.PropertyChanged(order, propertyName, () =>
-            {
-                order.Add(item);
-            });
-        }
-        [Theory]
-        [InlineData("Price")]
-        [InlineData("Items")]
-        public void RemovingAnItemShouldTriggerPropertyChanged(string propertyName) {
-            {
-                var order = new Order();
-                var item = new MockOrderItem();
-                Assert.PropertyChanged(order, propertyName, () =>
-                {
-                    order.Remove(item);
-                });
-
-            } }
+        
+        
 
     }
 }

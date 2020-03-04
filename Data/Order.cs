@@ -26,7 +26,7 @@ namespace CowboyCafe.Data
                 return subtotal;
             }
         }
-        public IEnumerable<IOrderItem> Items => throw new NotImplementedException();
+        public IEnumerable<IOrderItem> Items => items.ToArray();
         public void Add(IOrderItem item)
         {
             items.Add(item);
