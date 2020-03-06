@@ -32,5 +32,20 @@ namespace PointOfSale
         {
             Container.Child = element;
         }
+
+        private void ItemSelectionButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void NewOrderButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CancelOrderButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
